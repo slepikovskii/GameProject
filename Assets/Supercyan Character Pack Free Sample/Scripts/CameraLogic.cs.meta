@@ -1,10 +1,7 @@
 fileFormatVersion: 2
-guid: 2ef0233d4c08b0c4d909da12ddc60082
-labels:
-- Camera
-timeCreated: 1466586422
-licenseType: Store
+guid: eb33aed3aff05ee4fac5922a1c6fe3e0
 MonoImporter:
+  externalObjects: {}
   serializedVersion: 2
   defaultReferences: []
   executionOrder: 0
