@@ -153,4 +153,17 @@ public class SimpleCharacterControl : MonoBehaviour {
             m_animator.SetTrigger("Jump");
         }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (Input.GetKey(KeyCode.E))
+        {
+            if (other.gameObject.CompareTag("pickup"))
+            {
+
+
+                other.gameObject.SetActive(false);
+
+            }
+        }
+    }
 }
