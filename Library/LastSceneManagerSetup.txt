@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/ProjectScene.unity
-=======
-- path: Assets/Scenes/SampleScene.unity
->>>>>>> ca1965e4a4507114aa9599cfe3b150b6150a8fd4
+- path: Assets/Supercyan Character Pack Free Sample/Scenes/DemoScene.unity
   isLoaded: 1
   isActive: 1

@@ -21,8 +21,6 @@ GameObject:
   - component: {fileID: 4717718351051832}
   - component: {fileID: 33013193764746726}
   - component: {fileID: 23284188227366882}
-  - component: {fileID: 136131391674137346}
-  - component: {fileID: 54124803505204140}
   m_Layer: 0
   m_Name: GlassBottle
   m_TagString: Untagged
@@ -37,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1214465452482008}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.033224493, y: 0.5961997, z: -0.38271677}
+  m_LocalPosition: {x: 2.7633595, y: -4.641695, z: 12.5344715}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
@@ -85,31 +83,3 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1214465452482008}
   m_Mesh: {fileID: 4300000, guid: 6977945f8994d9c49b612045babd051b, type: 3}
---- !u!54 &54124803505204140
-Rigidbody:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1214465452482008}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 1
-  m_IsKinematic: 0
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!136 &136131391674137346
-CapsuleCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1214465452482008}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 4.1
-  m_Height: 21.8
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}

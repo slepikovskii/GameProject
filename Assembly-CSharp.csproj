@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\Desk_Prefab.cs" />
     <Compile Include="Assets\Scripts\Window_Prefab.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Demo.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Group6/GameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
