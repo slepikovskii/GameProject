@@ -27,7 +27,7 @@ public class SimpleCharacterControl : MonoBehaviour
     private readonly float m_backwardRunScale = 0.66f;
 
     private bool m_wasGrounded;
-
+    public int count;
 
     private float m_jumpTimeStamp = 0;
     private float m_minJumpInterval = 0.25f;
@@ -107,8 +107,12 @@ public class SimpleCharacterControl : MonoBehaviour
         }
 
         m_wasGrounded = m_isGrounded;
+      
     }
-
+    public void OnTriggerEnter(Collider other)
+    {
+        PickingUp();
+    }
     private void TankUpdate()
     {
         float v = Input.GetAxis("Vertical");
@@ -158,5 +162,17 @@ public class SimpleCharacterControl : MonoBehaviour
         {
             m_animator.SetTrigger("Jump");
         }
+    }
+
+    private void PickingUp()
+    {
+        count = 0;        
+        
+            if (gameObject.CompareTag("pickup")) {
+            gameObject.SetActive(false);
+                count++;
+            }
+            m_animator.SetTrigger("Pickup");
+        
     }
 }

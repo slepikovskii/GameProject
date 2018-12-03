@@ -932,6 +932,24 @@ CapsuleCollider:
   m_Height: 19.008923
   m_Direction: 1
   m_Center: {x: 0.000007867813, y: 0.00002670288, z: 0.000030517578}
+--- !u!1 &349534097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746,
+    type: 2}
+  m_PrefabInternal: {fileID: 1778022497}
+--- !u!136 &349534100
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 349534097}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.372425
+  m_Height: 19.00892
+  m_Direction: 1
+  m_Center: {x: -0.000007867813, y: 0, z: 0}
 --- !u!1001 &360163682
 Prefab:
   m_ObjectHideFlags: 0
@@ -2643,7 +2661,7 @@ GameObject:
   - component: {fileID: 949586008}
   m_Layer: 0
   m_Name: Bottle
-  m_TagString: pickup
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2659,7 +2677,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 0
+  m_IsKinematic: 1
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -4348,6 +4366,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
   m_IsPrefabAsset: 0
@@ -5228,6 +5250,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
+      propertyPath: m_TagString
+      value: pickup
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
   m_IsPrefabAsset: 0
@@ -5521,6 +5547,24 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7de4e79a9aac9e74685b119d54f91a58, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &1974833134 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736,
+    type: 2}
+  m_PrefabInternal: {fileID: 1432898279}
+--- !u!136 &1974833137
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1974833134}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 3.5678906
+  m_Height: 19.23994
+  m_Direction: 1
+  m_Center: {x: -0.0000014305115, y: 0, z: 0.000022888184}
 --- !u!1 &1981629459 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746,
