@@ -2,9 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class pick : MonoBehaviour
-{
-
+public class Pick : MonoBehaviour
+{ 
     // Use this for initialization
     void Start()
     {
@@ -19,9 +18,11 @@ public class pick : MonoBehaviour
 
     void OnTriggerEnter(Collider colider)
     {
-        if (gameObject.CompareTag("Player"))
-        {
-            Destroy(gameObject);
-        }
+    if (colider.gameObject.tag == "Player")
+    {
+
+            Destroy(this.gameObject);
+
+    }
     }
 }

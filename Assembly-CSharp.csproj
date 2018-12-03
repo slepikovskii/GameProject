@@ -64,7 +64,7 @@
     <Compile Include="Assets\Scripts\Bookshelf_prefab.cs" />
     <Compile Include="Assets\Scripts\Chair_Prefab.cs" />
     <Compile Include="Assets\Scripts\Desk_Prefab.cs" />
-    <Compile Include="Assets\Scripts\pick.cs" />
+    <Compile Include="Assets\Scripts\Pick.cs" />
     <Compile Include="Assets\Scripts\Window_Prefab.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />

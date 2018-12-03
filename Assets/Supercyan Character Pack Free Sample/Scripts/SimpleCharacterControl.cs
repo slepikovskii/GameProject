@@ -109,10 +109,7 @@ public class SimpleCharacterControl : MonoBehaviour
         m_wasGrounded = m_isGrounded;
       
     }
-    public void OnTriggerEnter(Collider other)
-    {
-        PickingUp();
-    }
+   
     private void TankUpdate()
     {
         float v = Input.GetAxis("Vertical");
@@ -140,7 +137,10 @@ public class SimpleCharacterControl : MonoBehaviour
 
         JumpingAndLanding();
     }
-
+    private void OnTriggerEnter(Collider other)
+    {
+        Picking(other);
+    }
 
 
     private void JumpingAndLanding()
@@ -164,15 +164,15 @@ public class SimpleCharacterControl : MonoBehaviour
         }
     }
 
-    private void PickingUp()
+    public void Picking(Collider other)
     {
-        count = 0;        
-        
-            if (gameObject.CompareTag("pickup")) {
-            gameObject.SetActive(false);
-                count++;
-            }
-            m_animator.SetTrigger("Pickup");
-        
+        count = 0;
+    if (other.gameObject.CompareTag("pickup"))
+        {
+           
+            count++;
+        }
+        m_animator.SetTrigger("Pickup");
+
     }
 }
