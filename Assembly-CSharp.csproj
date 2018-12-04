@@ -61,6 +61,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\Bookshelf_prefab.cs" />
     <Compile Include="Assets\Scripts\Chair_Prefab.cs" />
     <Compile Include="Assets\Scripts\Desk_Prefab.cs" />
