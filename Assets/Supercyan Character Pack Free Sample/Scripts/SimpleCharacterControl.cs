@@ -166,12 +166,22 @@ public class SimpleCharacterControl : MonoBehaviour
 
     public void Picking(Collider other)
     {
+        count = 0;
         if (Input.GetKey(KeyCode.E) & other.gameObject.CompareTag("pickup"))
         {
             Destroy(other.gameObject);
             m_animator.SetTrigger("Pickup");
+            count++;
         }
     
 
+    }
+
+    public void Putting(Collider trashcan)
+    {
+        if (trashcan.gameObject.CompareTag("trashcan") & Input.GetKey(KeyCode.Q))
+        {
+            count--;
+        }
     }
 }
