@@ -1,7 +1,8 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
 
-public class SimpleCharacterControl : MonoBehaviour {
+public class SimpleCharacterControl : MonoBehaviour
+{
 
     private enum ControlMode
     {
@@ -26,7 +27,7 @@ public class SimpleCharacterControl : MonoBehaviour {
     private readonly float m_backwardRunScale = 0.66f;
 
     private bool m_wasGrounded;
-    private Vector3 m_currentDirection = Vector3.zero;
+    public int count;
 
     private float m_jumpTimeStamp = 0;
     private float m_minJumpInterval = 0.25f;
@@ -37,11 +38,12 @@ public class SimpleCharacterControl : MonoBehaviour {
     private void OnCollisionEnter(Collision collision)
     {
         ContactPoint[] contactPoints = collision.contacts;
-        for(int i = 0; i < contactPoints.Length; i++)
+        for (int i = 0; i < contactPoints.Length; i++)
         {
             if (Vector3.Dot(contactPoints[i].normal, Vector3.up) > 0.5f)
             {
-                if (!m_collisions.Contains(collision.collider)) {
+                if (!m_collisions.Contains(collision.collider))
+                {
                     m_collisions.Add(collision.collider);
                 }
                 m_isGrounded = true;
@@ -61,14 +63,15 @@ public class SimpleCharacterControl : MonoBehaviour {
             }
         }
 
-        if(validSurfaceNormal)
+        if (validSurfaceNormal)
         {
             m_isGrounded = true;
             if (!m_collisions.Contains(collision.collider))
             {
                 m_collisions.Add(collision.collider);
             }
-        } else
+        }
+        else
         {
             if (m_collisions.Contains(collision.collider))
             {
@@ -80,19 +83,20 @@ public class SimpleCharacterControl : MonoBehaviour {
 
     private void OnCollisionExit(Collision collision)
     {
-        if(m_collisions.Contains(collision.collider))
+        if (m_collisions.Contains(collision.collider))
         {
             m_collisions.Remove(collision.collider);
         }
         if (m_collisions.Count == 0) { m_isGrounded = false; }
     }
 
-	void Update () {
+    void Update()
+    {
         m_animator.SetBool("Grounded", m_isGrounded);
 
-        switch(m_controlMode)
+        switch (m_controlMode)
         {
-           
+
             case ControlMode.Tank:
                 TankUpdate();
                 break;
@@ -103,8 +107,9 @@ public class SimpleCharacterControl : MonoBehaviour {
         }
 
         m_wasGrounded = m_isGrounded;
+      
     }
-
+   
     private void TankUpdate()
     {
         float v = Input.GetAxis("Vertical");
@@ -112,10 +117,12 @@ public class SimpleCharacterControl : MonoBehaviour {
 
         bool walk = Input.GetKey(KeyCode.LeftShift);
 
-        if (v < 0) {
+        if (v < 0)
+        {
             if (walk) { v *= m_backwardsWalkScale; }
             else { v *= m_backwardRunScale; }
-        } else if(walk)
+        }
+        else if (walk)
         {
             v *= m_walkScale;
         }
@@ -130,8 +137,11 @@ public class SimpleCharacterControl : MonoBehaviour {
 
         JumpingAndLanding();
     }
+    private void OnTriggerEnter(Collider other)
+    {
+        Picking(other);
+    }
 
-   
 
     private void JumpingAndLanding()
     {
@@ -153,17 +163,16 @@ public class SimpleCharacterControl : MonoBehaviour {
             m_animator.SetTrigger("Jump");
         }
     }
-    private void OnTriggerEnter(Collider other)
+
+    public void Picking(Collider other)
     {
-        if (Input.GetKey(KeyCode.E))
+        count = 0;
+    if (other.gameObject.CompareTag("pickup"))
         {
-            if (other.gameObject.CompareTag("pickup"))
-            {
-
-
-                other.gameObject.SetActive(false);
-
-            }
+           
+            count++;
         }
+        m_animator.SetTrigger("Pickup");
+
     }
 }

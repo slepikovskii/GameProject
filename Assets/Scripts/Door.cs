@@ -2,10 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlasticTrash : MonoBehaviour {
+public class Door : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
+    public GameObject door;
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	
