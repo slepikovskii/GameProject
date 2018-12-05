@@ -315,7 +315,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (4)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -428,7 +428,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (2)
+      value: Paper
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -707,7 +707,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (9)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -839,7 +839,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (3)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -1138,7 +1138,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (8)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -1474,7 +1474,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (1)
+      value: Paper
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -1718,15 +1718,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 5.79
+      value: 5.790001
       objectReference: {fileID: 0}
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.13534689
+      value: 0.13534687
       objectReference: {fileID: 0}
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 7.0497594
+      value: 7.049761
       objectReference: {fileID: 0}
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1746,7 +1746,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -1768,6 +1768,18 @@ Prefab:
         type: 2}
       propertyPath: m_Constraints
       value: 14
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4911269470637362, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8512650ab6279134f93acbb6ab15619e, type: 2}
@@ -2342,7 +2354,7 @@ Transform:
   - {fileID: 943896422}
   - {fileID: 23121852}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &708144993
 GameObject:
@@ -2754,7 +2766,7 @@ GameObject:
   - component: {fileID: 880167497}
   m_Layer: 0
   m_Name: GlassBottleObjects
-  m_TagString: Untagged
+  m_TagString: pickup
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4955,7 +4967,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (6)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -5806,7 +5818,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -5942,7 +5954,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (7)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
@@ -6441,7 +6453,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_Name
-      value: Paper (5)
+      value: 'Paper '
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
