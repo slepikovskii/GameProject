@@ -16,7 +16,7 @@ public class Pick : MonoBehaviour
 
     }
 
-    void OnTriggerEnter(Collider colider)
+   /* void OnTriggerEnter(Collider colider)
     {
     if (colider.gameObject.tag == "Player")
     {
@@ -24,5 +24,5 @@ public class Pick : MonoBehaviour
             Destroy(this.gameObject);
 
     }
-    }
+    }*/
 }

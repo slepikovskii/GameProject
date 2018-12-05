@@ -27,7 +27,13 @@ public class SimpleCharacterControl : MonoBehaviour
     private readonly float m_backwardRunScale = 0.66f;
 
     private bool m_wasGrounded;
-    public int count;
+
+    public int papercount;
+    public int glasscount;
+    public int plasticcount;
+
+    private  int trashtag;
+
 
     private float m_jumpTimeStamp = 0;
     private float m_minJumpInterval = 0.25f;
@@ -163,16 +169,69 @@ public class SimpleCharacterControl : MonoBehaviour
             m_animator.SetTrigger("Jump");
         }
     }
+    public void Trashdefinition()
+    {
+        trashtag = 0;
+        if (gameObject.name.Equals("Paper")) {
+            trashtag = 1;
+            return;
+        }
+        if (gameObject.name.Equals("Glassbottle"))
+        {
+            trashtag = 2;
+            return;
+        }
+        if (gameObject.name.Equals("Plasticbottle"))
+        {
+            trashtag = 3;
+            return;
+        }
+        switch (trashtag)
+        {
+            case 1:
+                papercount++;
+                break;
+            case 2:
+                glasscount++;
+                break;
+            case 3:
+                plasticcount++;
+                break;
+        }
+
+    }
 
     public void Picking(Collider other)
     {
-        count = 0;
-    if (other.gameObject.CompareTag("pickup"))
-        {
-           
-            count++;
-        }
-        m_animator.SetTrigger("Pickup");
+        papercount = 0;
+        glasscount = 0;
+        plasticcount = 0;
 
+        if (Input.GetKey(KeyCode.E) & other.gameObject.CompareTag("pickup") )
+        {
+            Destroy(other.gameObject);
+            m_animator.SetTrigger("Pickup");
+            Trashdefinition();
+            
+            
+        }
+        
+
+    }
+
+    public void Putting(Collider trashcan)
+    {
+        if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKey(KeyCode.Q))
+        {
+            papercount--;
+        }
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKey(KeyCode.Q))
+        {
+            glasscount--;
+        }
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKey(KeyCode.Q))
+        {
+            plasticcount--;
+        }
     }
 }
