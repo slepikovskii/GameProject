@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class Pushing : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    public AudioSource StuckSource;
+
+    // Use this for initialization
+    void Start () {
+        StuckSource = GetComponent<AudioSource>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -19,6 +21,7 @@ public class Pushing : MonoBehaviour {
         if (collision.gameObject.tag == "Player")
         {
             this.GetComponent<Rigidbody>().AddForce(Vector3.forward*2f);
+            StuckSource.Play();
         }
     }
 }
