@@ -21,9 +21,12 @@ GameObject:
   - component: {fileID: 4506805309961376}
   - component: {fileID: 33135523078644024}
   - component: {fileID: 23116121254440442}
+  - component: {fileID: 54263801684520248}
+  - component: {fileID: 65670623681679030}
+  - component: {fileID: 65427538840252854}
   m_Layer: 0
   m_Name: PaperTrashCan
-  m_TagString: Untagged
+  m_TagString: trashcan
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1723157878947434}
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.2912936, y: -14.167274, z: 37.5071}
+  m_LocalPosition: {x: -0.9078911, y: 0.15639187, z: 4.7530003}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
   m_Children: []
   m_Father: {fileID: 0}
@@ -83,3 +86,42 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1723157878947434}
   m_Mesh: {fileID: 4300000, guid: 0f5cde8e7d51bd445af28c4bc08559fc, type: 3}
+--- !u!54 &54263801684520248
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723157878947434}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 116
+  m_CollisionDetection: 0
+--- !u!65 &65427538840252854
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723157878947434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65670623681679030
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1723157878947434}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
+  m_Center: {x: 0, y: 0, z: 0}

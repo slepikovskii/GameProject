@@ -9,9 +9,15 @@ TagManager:
   - paperpickup
   - glasspickup
   - plasticpickup
+<<<<<<< HEAD
   - plastictrashcan
   - papertrashcan
   - glasstrashcan
+=======
+  - glasstrashcan
+  - papertrashcan
+  - plastictrashcan
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
   layers:
   - Default
   - TransparentFX

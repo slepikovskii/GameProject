@@ -5,11 +5,11 @@ using UnityEngine;
 public class Desk_Prefab : MonoBehaviour {
 
     public GameObject Desk;
-
+   
     // Use this for initialization
     void Start () {
-		
-	}
+        
+    }
 	
 	// Update is called once per frame
 	void Update () {
