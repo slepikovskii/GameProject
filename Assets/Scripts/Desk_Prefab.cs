@@ -8,7 +8,7 @@ public class Desk_Prefab : MonoBehaviour {
    
     // Use this for initialization
     void Start () {
-        StuckSource = GetComponent<AudioSource>();
+        
     }
 	
 	// Update is called once per frame
