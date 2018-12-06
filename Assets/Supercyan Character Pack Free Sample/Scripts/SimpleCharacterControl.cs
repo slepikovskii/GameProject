@@ -7,7 +7,15 @@ public class SimpleCharacterControl : MonoBehaviour
 {
 
     public GameObject MessagePanel;
+<<<<<<< HEAD
    
+=======
+<<<<<<< HEAD
+   
+=======
+    public Canvas hud;
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
 
     private enum ControlMode
     {
@@ -196,7 +204,35 @@ public class SimpleCharacterControl : MonoBehaviour
     
     public void Picking(Collider other)
     {
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.E) & (other.gameObject.CompareTag("paperpickup") || other.gameObject.CompareTag("plasticpickup") ||  other.gameObject.CompareTag("glasspickup") ))
+=======
+<<<<<<< HEAD
+        if (Input.GetKeyDown(KeyCode.E) & (other.gameObject.CompareTag("paperpickup") || other.gameObject.CompareTag("plasticpickup") ||  other.gameObject.CompareTag("glasspickup") ))
+=======
+<<<<<<< HEAD
+        
+        trashtag = 0;
+        if (gameObject.name.Equals("Paper")) {
+            trashtag = 1;
+            return;
+        }
+        if (gameObject.name.Equals("Glassbottle"))
+        {
+            trashtag = 2;
+            return;
+        }
+        if (gameObject.name.Equals("Plasticbottle"))
+        {
+            trashtag = 3;
+            return;
+        }
+        switch (trashtag)
+=======
+        if (Input.GetKeyDown(KeyCode.E) & (other.gameObject.CompareTag("paperpickup") || other.gameObject.CompareTag("plasticpickup") ||  other.gameObject.CompareTag("glasspickup") ))
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
         {
             
             m_animator.SetTrigger("Pickup");
@@ -237,6 +273,7 @@ public class SimpleCharacterControl : MonoBehaviour
 
     public void Putting(Collider trashcan)
     {
+<<<<<<< HEAD
         if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKeyDown(KeyCode.B))
         {
             
@@ -247,6 +284,29 @@ public class SimpleCharacterControl : MonoBehaviour
             }
         }
         if (trashcan.gameObject.CompareTag("papertrashcan") & (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.M)))
+=======
+<<<<<<< HEAD
+        if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKeyDown(KeyCode.B))
+=======
+        if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKey(KeyCode.B))
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
+        {
+            
+            if (papercount != 0)
+            {
+<<<<<<< HEAD
+                papercount = papercount -1;
+
+            }
+        }
+        if (trashcan.gameObject.CompareTag("papertrashcan") & (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.M)))
+=======
+                papercount--;
+
+            }
+        }
+        if (trashcan.gameObject.CompareTag("papertrashcan") & (Input.GetKey(KeyCode.N) || Input.GetKey(KeyCode.M)))
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
         {
             OpenMessagePanel("");
             errormessage++;
@@ -254,6 +314,30 @@ public class SimpleCharacterControl : MonoBehaviour
             
         }
 
+<<<<<<< HEAD
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKeyDown(KeyCode.N))
+=======
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKey(KeyCode.N))
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
+        {            
+            if (glasscount !=0)
+            {
+                glasscount--;
+
+            }
+       
+        }
+<<<<<<< HEAD
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.M)))
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
+        }
+
+<<<<<<< HEAD
         if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKeyDown(KeyCode.N))
         {            
             if (glasscount !=0)
@@ -271,6 +355,9 @@ public class SimpleCharacterControl : MonoBehaviour
             
         }
 
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKeyDown(KeyCode.M))
+        {
+=======
         if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKeyDown(KeyCode.M))
         {
             if (plasticcount !=0)
@@ -309,10 +396,78 @@ public class SimpleCharacterControl : MonoBehaviour
         {
             yield return new WaitForSeconds(3);
             CloseMessagePanel();
+=======
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & (Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.M)))
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
+        }
+
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKey(KeyCode.M))
+        {
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
+            if (plasticcount !=0)
+            {
+                plasticcount--;
+            }
+
+        }
+<<<<<<< HEAD
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.N)))
+=======
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & (Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.N)))
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
+<<<<<<< HEAD
+        }
+    }
+
+=======
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
         }
 
 
         
     }
 
+<<<<<<< HEAD
+=======
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
+  
+
+    public void OpenMessagePanel(string text) {
+
+        MessagePanel.SetActive(true);
+    }
+
+
+    public void CloseMessagePanel()
+    {
+        
+        MessagePanel.SetActive(false);
+    }
+
+
+    IEnumerator Second() {
+
+        if (MessagePanel.activeSelf)
+        {
+            yield return new WaitForSeconds(3);
+            CloseMessagePanel();
+        }
+
+
+        
+    }
+
+<<<<<<< HEAD
+=======
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
+>>>>>>> 57784e4796bc0dd50e54ba1f6fc9461b76e4e560
 }
