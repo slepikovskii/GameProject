@@ -319,7 +319,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -370,6 +370,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0aa734923550f46489c2913d76386cd0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+--- !u!1 &164877441 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1850387839186434, guid: 4913afbefa5296442af044caa1ccea8c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1874156738}
+--- !u!65 &164877445
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164877441}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.96341, y: 31.278376, z: 31.992233}
+  m_Center: {x: 0.4505217, y: 0, z: 0.96493363}
+--- !u!54 &164877446
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 164877441}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
+>>>>>>> 09933326cfbc7df916281d1b90c886cdafefdcff
 --- !u!1001 &169948509
 Prefab:
   m_ObjectHideFlags: 0
@@ -415,7 +450,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -632,6 +667,41 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
+--- !u!1 &248110853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1723157878947434, guid: cfb0687e70c336f4b83fd83692992c06,
+    type: 2}
+  m_PrefabInternal: {fileID: 2061519613}
+--- !u!65 &248110857
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248110853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &248110858
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 248110853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+>>>>>>> 09933326cfbc7df916281d1b90c886cdafefdcff
 --- !u!1001 &255179351
 Prefab:
   m_ObjectHideFlags: 0
@@ -677,7 +747,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -759,7 +829,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -809,7 +879,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -879,7 +949,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4689156373738528, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_LocalScale.x
@@ -1046,7 +1116,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4689156373738528, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_LocalScale.x
@@ -1108,7 +1178,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -1428,7 +1498,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -1510,7 +1580,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -1996,6 +2066,41 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3165d7738dccac841ad9ce294d36cba5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+--- !u!1 &589142032 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1107873859856804, guid: e3ac9a0eb2afb604f8d50204ef3c1dd1,
+    type: 2}
+  m_PrefabInternal: {fileID: 951110383}
+--- !u!65 &589142036
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589142032}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!54 &589142037
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 589142032}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 14
+  m_CollisionDetection: 0
+>>>>>>> 09933326cfbc7df916281d1b90c886cdafefdcff
 --- !u!1001 &592760254
 Prefab:
   m_ObjectHideFlags: 0
@@ -2202,7 +2307,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -2314,6 +2419,68 @@ Transform:
   - {fileID: 1149331727}
   m_Father: {fileID: 0}
   m_RootOrder: 15
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &716674512
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 716674515}
+  - component: {fileID: 716674514}
+  - component: {fileID: 716674513}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &716674513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716674512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1077351063, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &716674514
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716674512}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -619905303, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &716674515
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 716674512}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &718252800 stripped
 GameObject:
@@ -2458,7 +2625,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4689156373738528, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_LocalScale.x
@@ -2617,7 +2784,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -2935,7 +3102,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4256168317273752, guid: e3ac9a0eb2afb604f8d50204ef3c1dd1, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.15639187
+      value: 0.152
       objectReference: {fileID: 0}
     - target: {fileID: 4256168317273752, guid: e3ac9a0eb2afb604f8d50204ef3c1dd1, type: 2}
       propertyPath: m_LocalPosition.z
@@ -3063,7 +3230,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -3133,7 +3300,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -3284,7 +3451,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -3586,7 +3753,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4689156373738528, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_LocalScale.x
@@ -3816,7 +3983,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -3908,7 +4075,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -3978,7 +4145,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -4290,7 +4457,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -4441,7 +4608,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -4598,7 +4765,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -4660,7 +4827,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
@@ -4718,7 +4885,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
@@ -4860,7 +5027,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -5336,7 +5503,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -5406,7 +5573,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -5625,7 +5792,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -5740,7 +5907,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4689965605579890, guid: 4913afbefa5296442af044caa1ccea8c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.15639187
+      value: 0.238
       objectReference: {fileID: 0}
     - target: {fileID: 4689965605579890, guid: 4913afbefa5296442af044caa1ccea8c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -5814,7 +5981,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -6205,7 +6372,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1989959466956246, guid: 7f84e82d779c04745a625132daee8746, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: plasticpickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7f84e82d779c04745a625132daee8746, type: 2}
@@ -6314,7 +6481,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1009211847073690, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: paperpickup
       objectReference: {fileID: 0}
     - target: {fileID: 4561516536795512, guid: 30ab226fb246bf84283b85917656bcf2, type: 2}
       propertyPath: m_LocalScale.x
@@ -6438,7 +6605,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1214465452482008, guid: 994ac4b175471114f8fef81b98042736, type: 2}
       propertyPath: m_TagString
-      value: pickup
+      value: glasspickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 994ac4b175471114f8fef81b98042736, type: 2}
