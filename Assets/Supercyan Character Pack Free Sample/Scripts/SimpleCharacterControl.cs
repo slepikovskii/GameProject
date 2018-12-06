@@ -171,6 +171,7 @@ public class SimpleCharacterControl : MonoBehaviour
     }
     public void Trashdefinition()
     {
+        
         trashtag = 0;
         if (gameObject.name.Equals("Paper")) {
             trashtag = 1;
