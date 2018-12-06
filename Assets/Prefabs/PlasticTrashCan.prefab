@@ -21,8 +21,12 @@ GameObject:
   - component: {fileID: 4256168317273752}
   - component: {fileID: 33941748632439746}
   - component: {fileID: 23986616061117448}
+<<<<<<< HEAD
+  - component: {fileID: 65458984183995076}
+=======
   - component: {fileID: 65177711194827606}
   - component: {fileID: 65972871788491764}
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a
   m_Layer: 0
   m_Name: PlasticTrashCan
   m_TagString: trashcan
@@ -36,9 +40,15 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1107873859856804}
+<<<<<<< HEAD
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.63, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+=======
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -0.93, y: 0.15639187, z: 3.76}
   m_LocalScale: {x: 0.01, y: 0.01, z: 0.01}
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -85,7 +95,11 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1107873859856804}
   m_Mesh: {fileID: 4300000, guid: 0b650d01c37a22e42ba028d38d0353da, type: 3}
+<<<<<<< HEAD
+--- !u!65 &65458984183995076
+=======
 --- !u!65 &65177711194827606
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a
 BoxCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -97,6 +111,8 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
   m_Center: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD
+=======
 --- !u!65 &65972871788491764
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -109,3 +125,4 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 30.062363, y: 31.278376, z: 30.062363}
   m_Center: {x: 0, y: 0, z: 0}
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a

@@ -196,7 +196,27 @@ public class SimpleCharacterControl : MonoBehaviour
     
     public void Picking(Collider other)
     {
+<<<<<<< HEAD
+        
+        trashtag = 0;
+        if (gameObject.name.Equals("Paper")) {
+            trashtag = 1;
+            return;
+        }
+        if (gameObject.name.Equals("Glassbottle"))
+        {
+            trashtag = 2;
+            return;
+        }
+        if (gameObject.name.Equals("Plasticbottle"))
+        {
+            trashtag = 3;
+            return;
+        }
+        switch (trashtag)
+=======
         if (Input.GetKeyDown(KeyCode.E) & (other.gameObject.CompareTag("paperpickup") || other.gameObject.CompareTag("plasticpickup") ||  other.gameObject.CompareTag("glasspickup") ))
+>>>>>>> 663309a6d0d953a641049409b47e985d7ee99d9a
         {
             
             m_animator.SetTrigger("Pickup");
