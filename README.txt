@@ -13,15 +13,13 @@ It is for PC users.
 
 How to run the game:
 	hotkeys:
-		W - go forward
-		S - go backward
-		A - turn left
-		D - turn right
+		W, up-array - go forward
+		S, down-array - go backward
+		A, left-array - turn left
+		D, right-array - turn right
 		Space - jump
 		E - pick up
-
-How to set up project:
-	
+		B, N, M - put garbage into trashcans
 
 What packages we used:
 	sounds were taken from  https://freesound.org/
