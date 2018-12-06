@@ -61,16 +61,28 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+    <Compile Include="Assets\Hud.cs" />
+=======
     <Compile Include="Assets\GlassbottleScript.cs" />
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
     <Compile Include="Assets\MainMenuScript.cs" />
     <Compile Include="Assets\Scripts\Bookshelf_prefab.cs" />
     <Compile Include="Assets\Scripts\Chair_Prefab.cs" />
     <Compile Include="Assets\Scripts\Desk_Prefab.cs" />
+<<<<<<< HEAD
+    <Compile Include="Assets\Scripts\ItemDragHandle.cs" />
+    <Compile Include="Assets\Scripts\ItemDropHandle.cs" />
+    <Compile Include="Assets\Scripts\Pick.cs" />
+    <Compile Include="Assets\Scripts\Pickingup.cs" />
+=======
     <Compile Include="Assets\Scripts\Pick.cs" />
     <Compile Include="Assets\Scripts\Pushing.cs" />
+>>>>>>> 3d3826471efdb1aa8363484a331d46b7b75cf1b0
     <Compile Include="Assets\Scripts\Window_Prefab.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Variables.cs" />
     <Reference Include="UnityEditor.StandardEvents">
       <HintPath>D:/Group6/GameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
