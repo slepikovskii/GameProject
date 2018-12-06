@@ -1,11 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using System.Collections;
 
 public class SimpleCharacterControl : MonoBehaviour
 {
 
-    
-
+    public GameObject MessagePanel;
+    public Canvas hud;
 
     private enum ControlMode
     {
@@ -36,6 +38,7 @@ public class SimpleCharacterControl : MonoBehaviour
     public int plasticcount = 0;
 
     private  int trashtag;
+    public int errormessage=0;
 
 
     private float m_jumpTimeStamp = 0;
@@ -157,7 +160,14 @@ public class SimpleCharacterControl : MonoBehaviour
     private void OnTriggerStay(Collider other)
     {
         Picking(other);
+        Putting(other);
+
+
     }
+
+   
+
+
 
 
     private void JumpingAndLanding()
@@ -235,30 +245,74 @@ public class SimpleCharacterControl : MonoBehaviour
                 papercount--;
 
             }
-
+        }
+        if (trashcan.gameObject.CompareTag("papertrashcan") & (Input.GetKey(KeyCode.N) || Input.GetKey(KeyCode.M)))
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
         }
 
         if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKey(KeyCode.N))
-        {
-            
+        {            
             if (glasscount !=0)
             {
                 glasscount--;
 
             }
-
-
+       
+        }
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & (Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.M)))
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
         }
 
         if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKey(KeyCode.M))
         {
-            
-
             if (plasticcount !=0)
             {
                 plasticcount--;
             }
 
         }
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & (Input.GetKey(KeyCode.B) || Input.GetKey(KeyCode.N)))
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
+        }
     }
+
+  
+
+    public void OpenMessagePanel(string text) {
+
+        MessagePanel.SetActive(true);
+    }
+
+
+    public void CloseMessagePanel()
+    {
+        
+        MessagePanel.SetActive(false);
+    }
+
+
+    IEnumerator Second() {
+
+        if (MessagePanel.activeSelf)
+        {
+            yield return new WaitForSeconds(3);
+            CloseMessagePanel();
+        }
+
+
+        
+    }
+
 }
