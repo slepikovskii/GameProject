@@ -1,8 +1,13 @@
 ﻿using UnityEngine;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using System.Collections;
 
 public class SimpleCharacterControl : MonoBehaviour
 {
+
+    public GameObject MessagePanel;
+   
 
     private enum ControlMode
     {
@@ -28,11 +33,12 @@ public class SimpleCharacterControl : MonoBehaviour
 
     private bool m_wasGrounded;
 
-    public int papercount;
-    public int glasscount;
-    public int plasticcount;
+    public int papercount = 0;
+    public int glasscount = 0;
+    public int plasticcount = 0;
 
     private  int trashtag;
+    public int errormessage=0;
 
 
     private float m_jumpTimeStamp = 0;
@@ -85,6 +91,10 @@ public class SimpleCharacterControl : MonoBehaviour
             }
             if (m_collisions.Count == 0) { m_isGrounded = false; }
         }
+
+
+
+
     }
 
     private void OnCollisionExit(Collision collision)
@@ -143,10 +153,21 @@ public class SimpleCharacterControl : MonoBehaviour
 
         JumpingAndLanding();
     }
-    private void OnTriggerEnter(Collider other)
+
+
+
+
+    private void OnTriggerStay(Collider other)
     {
         Picking(other);
+        Putting(other);
+
+
     }
+
+   
+
+
 
 
     private void JumpingAndLanding()
@@ -169,69 +190,129 @@ public class SimpleCharacterControl : MonoBehaviour
             m_animator.SetTrigger("Jump");
         }
     }
-    public void Trashdefinition()
-    {
-        trashtag = 0;
-        if (gameObject.name.Equals("Paper")) {
-            trashtag = 1;
-            return;
-        }
-        if (gameObject.name.Equals("Glassbottle"))
-        {
-            trashtag = 2;
-            return;
-        }
-        if (gameObject.name.Equals("Plasticbottle"))
-        {
-            trashtag = 3;
-            return;
-        }
-        switch (trashtag)
-        {
-            case 1:
-                papercount++;
-                break;
-            case 2:
-                glasscount++;
-                break;
-            case 3:
-                plasticcount++;
-                break;
-        }
 
-    }
+    
 
+    
     public void Picking(Collider other)
     {
-        papercount = 0;
-        glasscount = 0;
-        plasticcount = 0;
-
-        if (Input.GetKey(KeyCode.E) & other.gameObject.CompareTag("pickup") )
+        if (Input.GetKeyDown(KeyCode.E) & (other.gameObject.CompareTag("paperpickup") || other.gameObject.CompareTag("plasticpickup") ||  other.gameObject.CompareTag("glasspickup") ))
         {
-            Destroy(other.gameObject);
+            
             m_animator.SetTrigger("Pickup");
-            Trashdefinition();
-            
-            
+           
+
+
+            if (other.gameObject.CompareTag("paperpickup"))
+            {
+
+                papercount++;
+                
+            }
+            if (other.gameObject.CompareTag("glasspickup"))
+            {
+
+                glasscount++;
+               
+            }
+            if (other.gameObject.CompareTag("plasticpickup"))
+            {
+
+                plasticcount++;
+                
+            }
+
+
+            Destroy(other.gameObject);
+
+
+
         }
-        
+
+
+
+
 
     }
 
     public void Putting(Collider trashcan)
     {
-        if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKey(KeyCode.Q))
+        if (trashcan.gameObject.CompareTag("papertrashcan") & Input.GetKeyDown(KeyCode.B))
         {
-            papercount--;
+            
+            if (papercount != 0)
+            {
+                papercount = papercount -1;
+
+            }
         }
-        if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKey(KeyCode.Q))
+        if (trashcan.gameObject.CompareTag("papertrashcan") & (Input.GetKeyDown(KeyCode.N) || Input.GetKeyDown(KeyCode.M)))
         {
-            glasscount--;
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
         }
-        if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKey(KeyCode.Q))
+
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & Input.GetKeyDown(KeyCode.N))
+        {            
+            if (glasscount !=0)
+            {
+                glasscount--;
+
+            }
+       
+        }
+        if (trashcan.gameObject.CompareTag("glasstrashcan") & (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.M)))
         {
-            plasticcount--;
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
+        }
+
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & Input.GetKeyDown(KeyCode.M))
+        {
+            if (plasticcount !=0)
+            {
+                plasticcount--;
+            }
+
+        }
+        if (trashcan.gameObject.CompareTag("plastictrashcan") & (Input.GetKeyDown(KeyCode.B) || Input.GetKeyDown(KeyCode.N)))
+        {
+            OpenMessagePanel("");
+            errormessage++;
+            Second();
+            
         }
     }
+
+  
+
+    public void OpenMessagePanel(string text) {
+
+        MessagePanel.SetActive(true);
+    }
+
+
+    public void CloseMessagePanel()
+    {
+        
+        MessagePanel.SetActive(false);
+    }
+
+
+    IEnumerator Second() {
+
+        if (MessagePanel.activeSelf)
+        {
+            yield return new WaitForSeconds(3);
+            CloseMessagePanel();
+        }
+
+
+        
+    }
+
 }

@@ -65,21 +65,25 @@
     <Compile Include="Assets\Scripts\Bookshelf_prefab.cs" />
     <Compile Include="Assets\Scripts\Chair_Prefab.cs" />
     <Compile Include="Assets\Scripts\Desk_Prefab.cs" />
-    <Compile Include="Assets\Scripts\pick.cs" />
+    <Compile Include="Assets\Scripts\ItemDragHandle.cs" />
+    <Compile Include="Assets\Scripts\ItemDropHandle.cs" />
+    <Compile Include="Assets\Scripts\Pick.cs" />
+    <Compile Include="Assets\Scripts\Pickingup.cs" />
     <Compile Include="Assets\Scripts\Window_Prefab.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\CameraLogic.cs" />
     <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\SimpleCharacterControl.cs" />
+    <Compile Include="Assets\Supercyan Character Pack Free Sample\Scripts\Variables.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Game/GameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/betulsunter/Desktop/gezii/GameProject/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Game/GameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/betulsunter/Desktop/gezii/GameProject/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Game/GameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/betulsunter/Desktop/gezii/GameProject/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Game/GameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/betulsunter/Desktop/gezii/GameProject/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
